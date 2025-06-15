@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>Hello world - Mail</title>
+  <title>Recuperação de senha</title>
   <style>
 
     html, body {
@@ -23,7 +23,7 @@
     }
 
     article header {
-      background: #3e3e3e;
+      background: #06467a;
       color: #fff;
     }
 
@@ -34,7 +34,7 @@
     }
 
     article footer {
-      background: #3e3e3e;
+      background: #06467a;
       color: #fff;
 
       text-align: center;
@@ -67,7 +67,7 @@
   <article>
 
     <header class="content">
-      <h1>Olá, {{ user.name }}!</h1>
+      <h1>Olá, {{ user.nome }}!</h1>
       <small>
         Este e-mail foi enviado para: {{ user.email }}
       </small>
@@ -82,25 +82,16 @@
       </p>
       <hr>
       <p>
-        Sua nova senha é: {{ user.senha }}
+        Sua nova senha é: <b>{{ user.senha }}</b>
       </p>
       <hr>
-      <div class="see-google-container">
-        <a href="http://www.google.com">
-          <div class="see-google-btn">
-            Go to Google
-          </div>
-        </a>
-      </div>
     </section>
 
     <footer class="content">
 
       <p>
-        2022 &copy; All rights reserved
+        2025 &copy; Todos os direitos reservados
       </p>
-
-      <small>Node SMTP Mail Application</small>
 
     </footer>
 

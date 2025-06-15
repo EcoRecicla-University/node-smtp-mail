@@ -19,6 +19,7 @@ class Startup extends NodeSmtpMailStartup {
   start() {
 
     this.addRouting("/", require("../src/api/routes/main-routes"));
+    this.addRouting("/usuario", require("../src/api/routes/usuario-routes"));
 
   }
 }

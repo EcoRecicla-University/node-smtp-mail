@@ -4,6 +4,9 @@
 const templates = {
 
   helloWorld: "main/hello-world.html",
+  usuario: {
+    recuperacaoSenha: "usuario/recuperacao-senha.html",
+  }
 
 }
 

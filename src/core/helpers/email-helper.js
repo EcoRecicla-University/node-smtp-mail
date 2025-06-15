@@ -117,7 +117,12 @@ class EmailHelper {
 
       console.info('Enviando e-mail...');
 
-      transporter.sendMail(mailOptions, function (error, response) {
+      transporter.sendMail({
+        ...mailOptions,
+        headers: {
+          'From': mailOptions.from
+        }
+      }, function (error, response) {
 
         console.log('E-mail enviado!');
 
